@@ -16,7 +16,7 @@ on:
         options:
           - IPQ60XX-WIFI-YES
       SOURCE:
-        default: 'VIKINGYFY/immortalwrt'
+        default: 'yonyony1/immortalwrt-VIKINGYFY'
         required: true
         type: choice
         options:
