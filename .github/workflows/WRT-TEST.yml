@@ -20,6 +20,7 @@ on:
         required: true
         type: choice
         options:
+          - yonyony1/immortalwrt-VIKINGYFY
           - VIKINGYFY/immortalwrt
           - immortalwrt/immortalwrt
           - LiBwrt/openwrt-6.x
