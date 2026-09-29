@@ -37,7 +37,7 @@ jobs:
       matrix:
         CONFIG: [IPQ60XX-WIFI-YES]
         SOURCE: [yonyony1/LibWrt-laipeng668]
-        BRANCH: [main]
+        BRANCH: [25.12-nss]
 
     #调用公用编译核心WRT-CORE.yml
     uses: ./.github/workflows/WRT-CORE.yml
