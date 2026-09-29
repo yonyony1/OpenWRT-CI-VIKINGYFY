@@ -208,6 +208,7 @@ CONFIG_PACKAGE_kmod-sched-core=y
 CONFIG_PACKAGE_kmod-sched-cake=y
 CONFIG_PACKAGE_kmod-qca-nss-drv=y
 CONFIG_NSS_DRV_RMNET_ENABLE=y
+CONFIG_PACKAGE_Sqm-SCripts-nSS=y
 
 # qmodem-next 全套 5G模组管理（含短信功能）
 CONFIG_PACKAGE_luci-app-qmodem-next=y
