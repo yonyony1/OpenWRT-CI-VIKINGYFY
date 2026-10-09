@@ -140,3 +140,5 @@ UPDATE_VERSION() {
 if [ -f "$GITHUB_WORKSPACE/Scripts/PRIVATE.sh" ]; then
 	source "$GITHUB_WORKSPACE/Scripts/PRIVATE.sh"
 fi
+
+rm -f package/network/services/hostapd/patches/900-hostapd-update-muedca-params.patch
