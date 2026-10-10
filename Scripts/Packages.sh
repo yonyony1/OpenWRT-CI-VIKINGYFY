@@ -145,3 +145,5 @@ fi
 echo "src-git footstrap https://github.com/VizzleTF/luci-theme-footstrap.git" >> feeds.conf.default
 echo "src-git argon https://github.com/jerrykuku/luci-theme-argon.git" >> feeds.conf.default
 echo "src-git modem https://github.com/FUjr/modem_feeds.git;main" >> feeds.conf.default
+
+rm -f package/network/services/hostapd/patches/900-hostapd-update-muedca-params.patch
