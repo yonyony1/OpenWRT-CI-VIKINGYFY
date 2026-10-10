@@ -141,9 +141,10 @@ if [ -f "$GITHUB_WORKSPACE/Scripts/PRIVATE.sh" ]; then
 	source "$GITHUB_WORKSPACE/Scripts/PRIVATE.sh"
 fi
 
-# LuCI Themes
-src-git footstrap https://github.com/VizzleTF/luci-theme-footstrap.git
-src-git argon https://github.com/jerrykuku/luci-theme-argon.git
+# ===== 新增：添加自定义feeds源 =====
+echo "src-git footstrap https://github.com/VizzleTF/luci-theme-footstrap.git" >> feeds.conf.default
+echo "src-git argon https://github.com/jerrykuku/luci-theme-argon.git" >> feeds.conf.default
+echo "src-git modem https://github.com/FUjr/modem_feeds.git;main" >> feeds.conf.default
 
-# qmodem-next 5G modem feed
-src-git modem https://github.com/FUjr/modem_feeds.git;main
+# 删除hostapd MU-EDCA冲突补丁
+rm -f package/network/services/hostapd/patches/900-hostapd-update-muedca-params.patch
