@@ -147,7 +147,3 @@ src-git argon https://github.com/jerrykuku/luci-theme-argon.git
 
 # qmodem-next 5G modem feed
 src-git modem https://github.com/FUjr/modem_feeds.git;main
-
-rm -f package/network/services/hostapd/patches/900-hostapd-update-muedca-params.patch
-
-
