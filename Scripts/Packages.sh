@@ -140,3 +140,8 @@ UPDATE_VERSION() {
 if [ -f "$GITHUB_WORKSPACE/Scripts/PRIVATE.sh" ]; then
 	source "$GITHUB_WORKSPACE/Scripts/PRIVATE.sh"
 fi
+
+# ===== 新增：添加自定义feeds源 =====
+echo "src-git footstrap https://github.com/VizzleTF/luci-theme-footstrap.git" >> feeds.conf.default
+echo "src-git argon https://github.com/jerrykuku/luci-theme-argon.git" >> feeds.conf.default
+echo "src-git modem https://github.com/FUjr/modem_feeds.git;main" >> feeds.conf.default
